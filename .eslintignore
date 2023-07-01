@@ -37,3 +37,5 @@ yarn-error.log*
 
 # others
 .eslintrc.cjs
+.lintstagedrc.cjs
+.prettierrc.js
