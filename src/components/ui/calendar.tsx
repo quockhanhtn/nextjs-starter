@@ -1,6 +1,5 @@
 'use client';
 
-import * as React from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import { buttonVariants } from '~/components/ui/button';
 import { cn } from '~/styles/utils';
