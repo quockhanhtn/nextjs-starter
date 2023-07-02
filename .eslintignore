@@ -39,3 +39,6 @@ yarn-error.log*
 .eslintrc.cjs
 .lintstagedrc.cjs
 .prettierrc.js
+next.config.js
+postcss.config.js
+tailwind.config.js
