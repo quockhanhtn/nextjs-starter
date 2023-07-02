@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { PopoverProps } from '@radix-ui/react-popover';
 import { Button } from '~/components/ui/button';
@@ -22,8 +22,8 @@ interface PresetSelectorProps extends PopoverProps {
 }
 
 export function PresetSelector({ presets, ...props }: PresetSelectorProps) {
-  const [open, setOpen] = React.useState(false);
-  const [selectedPreset, setSelectedPreset] = React.useState<Preset>();
+  const [open, setOpen] = useState(false);
+  const [selectedPreset, setSelectedPreset] = useState<Preset>();
   const router = useRouter();
 
   return (

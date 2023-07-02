@@ -1,12 +1,12 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { CaretSortIcon } from '@radix-ui/react-icons';
 import { Button } from '~/components/ui/button';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '~/components/ui/collapsible';
 
 export default function CollapsibleDemo() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-[350px] space-y-2">

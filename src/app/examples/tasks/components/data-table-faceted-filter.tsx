@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Column } from '@tanstack/react-table';
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';

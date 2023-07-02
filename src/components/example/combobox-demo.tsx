@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { CaretSortIcon, CheckIcon } from '@radix-ui/react-icons';
 import { Button } from '~/components/ui/button';
 import {
@@ -37,8 +37,8 @@ const frameworks = [
 ];
 
 export default function ComboboxDemo() {
-  const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState('');
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState('');
 
   return (
     <Popover open={open} onOpenChange={setOpen}>

@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { Dialog } from '@radix-ui/react-dialog';
 import {
   AlertDialog,
@@ -32,8 +32,8 @@ import { toast } from '~/components/ui/use-toast';
 import { Flag, MoreHorizontal, Trash } from 'lucide-react';
 
 export function PresetActions() {
-  const [open, setIsOpen] = React.useState(false);
-  const [showDeleteDialog, setShowDeleteDialog] = React.useState(false);
+  const [open, setIsOpen] = useState(false);
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
 
   return (
     <>

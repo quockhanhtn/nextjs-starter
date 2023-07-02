@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 import { Button } from '~/components/ui/button';
 import {
@@ -36,8 +36,8 @@ const labels = [
 ];
 
 export default function ComboboxDropdownMenu() {
-  const [label, setLabel] = React.useState('feature');
-  const [open, setOpen] = React.useState(false);
+  const [label, setLabel] = useState('feature');
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex w-full flex-col items-start justify-between rounded-md border px-4 py-3 sm:flex-row sm:items-center">

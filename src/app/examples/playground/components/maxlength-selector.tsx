@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { SliderProps } from '@radix-ui/react-slider';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '~/components/ui/hover-card';
 import { Label } from '~/components/ui/label';
@@ -11,7 +11,7 @@ interface MaxLengthSelectorProps {
 }
 
 export function MaxLengthSelector({ defaultValue }: MaxLengthSelectorProps) {
-  const [value, setValue] = React.useState(defaultValue);
+  const [value, setValue] = useState(defaultValue);
 
   return (
     <div className="grid gap-2 pt-2">

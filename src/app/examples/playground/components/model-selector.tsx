@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useRef, useState } from 'react';
 import { PopoverProps } from '@radix-ui/react-popover';
 import { Button } from '~/components/ui/button';
 import {
@@ -26,9 +26,9 @@ interface ModelSelectorProps extends PopoverProps {
 }
 
 export function ModelSelector({ models, types, ...props }: ModelSelectorProps) {
-  const [open, setOpen] = React.useState(false);
-  const [selectedModel, setSelectedModel] = React.useState<Model>(models[0]);
-  const [peekedModel, setPeekedModel] = React.useState<Model>(models[0]);
+  const [open, setOpen] = useState(false);
+  const [selectedModel, setSelectedModel] = useState<Model>(models[0]);
+  const [peekedModel, setPeekedModel] = useState<Model>(models[0]);
 
   return (
     <div className="grid gap-2">
@@ -108,7 +108,7 @@ interface ModelItemProps {
 }
 
 function ModelItem({ model, isSelected, onSelect, onPeek }: ModelItemProps) {
-  const ref = React.useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useMutationObserver(ref, (mutations) => {
     // eslint-disable-next-line no-restricted-syntax

@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState } from 'react';
 import { CalendarIcon } from '@radix-ui/react-icons';
 import { Button } from '~/components/ui/button';
 import { Calendar } from '~/components/ui/calendar';
@@ -16,7 +16,7 @@ import { cn } from '~/styles/utils';
 import { addDays, format } from 'date-fns';
 
 export default function DatePickerWithPresets() {
-  const [date, setDate] = React.useState<Date>();
+  const [date, setDate] = useState<Date>();
 
   return (
     <Popover>
