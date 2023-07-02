@@ -1,7 +1,7 @@
 'use client';
 
 import { Table } from '@tanstack/react-table';
-import { DataTableViewOptions } from '~/app/examples/tasks/components/data-table-view-options';
+import { DataTableViewOptions } from '~/app/shadcn-examples/tasks/components/data-table-view-options';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
 import { X } from 'lucide-react';

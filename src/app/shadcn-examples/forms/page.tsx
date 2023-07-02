@@ -1,4 +1,4 @@
-import { ProfileForm } from '~/app/examples/forms/profile-form';
+import { ProfileForm } from '~/app/shadcn-examples/forms/profile-form';
 import { Separator } from '~/components/ui/separator';
 
 export default function SettingsProfilePage() {
