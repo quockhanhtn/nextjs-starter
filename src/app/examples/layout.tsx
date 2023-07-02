@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import ModeToggle from '~/components/example/mode-toggle';
 import { ExamplesNav } from '~/components/examples-nav';
 import { PageHeader, PageHeaderDescription, PageHeaderHeading } from '~/components/page-header';
 import { buttonVariants } from '~/components/ui/button';
@@ -45,6 +46,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
           >
             Components
           </Link>
+          <ModeToggle />
         </section>
       </PageHeader>
       <section>
