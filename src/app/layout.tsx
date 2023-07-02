@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { ThemeProvider } from '~/components/theme-provider';
+import { allFontsVariable } from '~/styles/fonts';
+import { cn } from '~/styles/utils';
 
 import '~/styles/globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 const favicons = [
   // android-chrome
@@ -62,7 +61,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn('font-sans antialiased', allFontsVariable)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
