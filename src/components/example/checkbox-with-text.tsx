@@ -7,6 +7,7 @@ export default function CheckboxWithText() {
     <div className="items-top flex space-x-2">
       <Checkbox id="terms1" />
       <div className="grid gap-1.5 leading-none">
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label
           htmlFor="terms1"
           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
