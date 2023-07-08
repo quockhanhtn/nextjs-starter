@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { EyeNoneIcon, EyeOpenIcon } from '@radix-ui/react-icons';
-import { GithubIcon, GoogleIcon } from '~/components/@icons';
 import { Icons } from '~/components/icons';
 import { Button } from '~/components/ui/button';
 import {

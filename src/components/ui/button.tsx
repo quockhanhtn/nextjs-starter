@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+import NextLink, { LinkProps } from 'next/link';
 import { Slot } from '@radix-ui/react-slot';
 import { cn } from '~/styles/utils';
 import { cva, type VariantProps } from 'class-variance-authority';

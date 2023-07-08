@@ -9,37 +9,37 @@ import { ArrowRight } from 'lucide-react';
 const examples = [
   {
     name: 'Dashboard',
-    href: '/examples/dashboard',
+    href: '/shadcn-examples/dashboard',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/dashboard',
   },
   {
     name: 'Cards',
-    href: '/examples/cards',
+    href: '/shadcn-examples/cards',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/cards',
   },
   {
     name: 'Tasks',
-    href: '/examples/tasks',
+    href: '/shadcn-examples/tasks',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/tasks',
   },
   {
     name: 'Playground',
-    href: '/examples/playground',
+    href: '/shadcn-examples/playground',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/playground',
   },
   {
     name: 'Forms',
-    href: '/examples/forms',
+    href: '/shadcn-examples/forms',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms',
   },
   {
     name: 'Music',
-    href: '/examples/music',
+    href: '/shadcn-examples/music',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/music',
   },
   {
     name: 'Authentication',
-    href: '/examples/authentication',
+    href: '/shadcn-examples/authentication',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/examples/authentication',
   },
 ];

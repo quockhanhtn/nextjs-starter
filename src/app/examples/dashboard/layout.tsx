@@ -1,14 +1,11 @@
-export type DashBoardLayoutProps = {
+import DashboardLayout from '~/layouts/dashboard';
+
+export type LayoutProps = {
   children: React.ReactNode;
 };
 
-const DashBoardLayout: React.FC<DashBoardLayoutProps> = ({ children }) => {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-      {children}
-    </div>
-  );
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return <DashboardLayout>{children}</DashboardLayout>;
 };
 
-export default DashBoardLayout;
+export default Layout;
