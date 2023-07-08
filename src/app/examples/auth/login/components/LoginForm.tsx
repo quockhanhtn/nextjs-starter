@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { EyeNoneIcon, EyeOpenIcon } from '@radix-ui/react-icons';
+import { GithubIcon, GoogleIcon } from '~/components/@icons';
 import { Icons } from '~/components/icons';
 import { Button } from '~/components/ui/button';
 import {
@@ -118,21 +119,14 @@ const LoginForm: React.FC<LoginFormProps> = ({ className, ...otherProps }) => {
           <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
         </div>
       </div>
+
       <Button variant="outline" type="button" disabled={isLoading}>
-        {isLoading ? (
-          <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
-        ) : (
-          <Icons.GitHub className="mr-2 h-4 w-4" />
-        )}{' '}
+        <GithubIcon className="mr-2 h-4 w-4" isLoading={isLoading} />
         Github
       </Button>
+
       <Button variant="outline" type="button" disabled={isLoading}>
-        {isLoading ? (
-          <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
-        ) : (
-          <Icons.Google className="mr-2 h-4 w-4" />
-        )}{' '}
-        Google
+        <GoogleIcon isLoading={isLoading} className="mr-2 h-4 w-4" /> Google
       </Button>
     </div>
   );

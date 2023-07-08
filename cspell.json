@@ -1,7 +1,17 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["cmdk", "Duarte", "hookform", "ianvs", "lucide", "peduarte", "shadcn", "tanstack"],
+  "words": [
+    "cmdk",
+    "Duarte",
+    "freepik",
+    "hookform",
+    "ianvs",
+    "lucide",
+    "peduarte",
+    "shadcn",
+    "tanstack"
+  ],
   "ignorePaths": [
     "node_modules/**",
     "endpoints/**",

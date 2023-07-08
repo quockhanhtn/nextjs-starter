@@ -7,7 +7,7 @@ import { Command } from 'lucide-react';
 import RegisterForm from './components/RegisterForm';
 
 export const metadata: Metadata = {
-  title: 'Authentication',
+  title: 'Register Page | Example',
   description: 'Authentication forms built using the components.',
 };
 
