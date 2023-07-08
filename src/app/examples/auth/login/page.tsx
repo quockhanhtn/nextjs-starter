@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { LoginForm } from '~/components/features/auth';
 import { buttonVariants } from '~/components/ui/button';
 import { cn } from '~/styles/utils';
 import { Command } from 'lucide-react';
-
-import LoginForm from './components/LoginForm';
 
 export const metadata: Metadata = {
   title: 'Login Page | Example',

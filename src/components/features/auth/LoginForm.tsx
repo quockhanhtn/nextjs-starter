@@ -19,6 +19,8 @@ import { cn } from '~/styles/utils';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 
+import AuthWithSocial from './AuthWithSocial';
+
 const loginFormSchema = z.object({
   email: z
     .string({
@@ -120,14 +122,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ className, ...otherProps }) => {
         </div>
       </div>
 
-      <Button variant="outline" type="button" disabled={isLoading}>
-        <GithubIcon className="mr-2 h-4 w-4" isLoading={isLoading} />
-        Github
-      </Button>
-
-      <Button variant="outline" type="button" disabled={isLoading}>
-        <GoogleIcon isLoading={isLoading} className="mr-2 h-4 w-4" /> Google
-      </Button>
+      <AuthWithSocial className="w-full" disabled={isLoading} direction="vertical" />
     </div>
   );
 };

@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { RegisterForm } from '~/components/features/auth';
 import { buttonVariants } from '~/components/ui/button';
 import { cn } from '~/styles/utils';
 import { Command } from 'lucide-react';
-
-import RegisterForm from './components/RegisterForm';
 
 export const metadata: Metadata = {
   title: 'Register Page | Example',
@@ -28,16 +27,8 @@ export default function RegisterPage() {
         <div className="relative z-20 flex items-center text-lg font-medium">
           <Command className="mr-2 h-6 w-6" /> Acme Inc
         </div>
-        <div className="relative z-20 mt-auto">
-          <blockquote className="space-y-2">
-            <p className="text-lg">
-              &ldquo;This library has saved me countless hours of work and helped me deliver
-              stunning designs to my clients faster than ever before.&rdquo;
-            </p>
-            <footer className="text-sm">Sofia Davis</footer>
-          </blockquote>
-        </div>
       </div>
+
       <div className="lg:p-8">
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
           <div className="flex flex-col space-y-2 text-center">

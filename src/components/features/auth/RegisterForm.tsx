@@ -7,6 +7,8 @@ import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
 import { cn } from '~/styles/utils';
 
+import AuthWithSocial from './AuthWithSocial';
+
 export type RegisterFormProps = React.HTMLAttributes<HTMLDivElement> & {};
 
 const RegisterForm: React.FC<RegisterFormProps> = ({ className, ...otherProps }) => {
@@ -53,14 +55,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ className, ...otherProps })
           <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
         </div>
       </div>
-      <Button variant="outline" type="button" disabled={isLoading}>
-        {isLoading ? (
-          <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
-        ) : (
-          <Icons.GitHub className="mr-2 h-4 w-4" />
-        )}{' '}
-        Github
-      </Button>
+
+      <AuthWithSocial className="w-full" disabled={isLoading} direction="vertical" />
     </div>
   );
 };

@@ -29,13 +29,14 @@ module.exports = {
   plugins: ['prettier', 'react-hooks', 'react'],
   rules: {
     // @typescript-eslint
-    'no-unused-vars': 'off',
+    'no-unused-vars': 'off', // off base rule, use @typescript-eslint/no-unused-vars instead
     '@typescript-eslint/no-unused-vars': [
       'warn',
       { args: 'none', argsIgnorePattern: '^_', caughtErrors: 'none', ignoreRestSiblings: true },
     ],
-    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/naming-convention': 'warn',
     '@typescript-eslint/no-shadow': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
 
     // others
     'arrow-body-style': 'off',
