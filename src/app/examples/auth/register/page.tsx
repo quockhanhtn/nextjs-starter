@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { RegisterForm } from '~/components/features/auth';
-import { buttonVariants } from '~/components/ui/button';
-import { cn } from '~/styles/utils';
 import { Command } from 'lucide-react';
+
+import { buttonVariants } from '~/components/ui/button';
+import { RegisterForm } from '~/components/features/auth';
+import { cn } from '~/styles/utils';
 
 export const metadata: Metadata = {
   title: 'Register Page | Example',

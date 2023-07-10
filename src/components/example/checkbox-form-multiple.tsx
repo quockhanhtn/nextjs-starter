@@ -1,6 +1,9 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+
 import { Button } from '~/components/ui/button';
 import { Checkbox } from '~/components/ui/checkbox';
 import {
@@ -13,8 +16,6 @@ import {
   FormMessage,
 } from '~/components/ui/form';
 import { toast } from '~/components/ui/use-toast';
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
 
 const items = [
   {

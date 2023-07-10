@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+
 import { ThemeProvider } from '~/components/theme-provider';
 import { allFontsVariable } from '~/styles/fonts';
 import { cn } from '~/styles/utils';

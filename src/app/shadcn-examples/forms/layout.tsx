@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { SidebarNav } from '~/app/shadcn-examples/forms/components/sidebar-nav';
+
 import { Separator } from '~/components/ui/separator';
+import { SidebarNav } from '~/app/shadcn-examples/forms/components/sidebar-nav';
 
 export const metadata: Metadata = {
   title: 'Forms',

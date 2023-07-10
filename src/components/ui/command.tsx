@@ -3,9 +3,10 @@
 import { forwardRef } from 'react';
 import { DialogProps } from '@radix-ui/react-dialog';
 import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { Command as CommandPrimitive } from 'cmdk';
+
 import { Dialog, DialogContent } from '~/components/ui/dialog';
 import { cn } from '~/styles/utils';
-import { Command as CommandPrimitive } from 'cmdk';
 
 const Command = forwardRef<
   React.ElementRef<typeof CommandPrimitive>,

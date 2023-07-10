@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { ListMusic, PlusCircle } from 'lucide-react';
+
 import {
   ContextMenu,
   ContextMenuContent,
@@ -10,7 +12,6 @@ import {
   ContextMenuTrigger,
 } from '~/components/ui/context-menu';
 import { cn } from '~/styles/utils';
-import { ListMusic, PlusCircle } from 'lucide-react';
 
 import { Album } from '../data/albums';
 import { playlists } from '../data/playlists';

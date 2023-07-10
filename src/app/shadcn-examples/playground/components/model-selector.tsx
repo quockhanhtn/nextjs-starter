@@ -2,6 +2,9 @@
 
 import { useRef, useState } from 'react';
 import { PopoverProps } from '@radix-ui/react-popover';
+import { useMutationObserver } from '~/hooks';
+import { Check, ChevronsUpDown } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import {
   Command,
@@ -14,9 +17,7 @@ import {
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '~/components/ui/hover-card';
 import { Label } from '~/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '~/components/ui/popover';
-import { useMutationObserver } from '~/hooks';
 import { cn } from '~/styles/utils';
-import { Check, ChevronsUpDown } from 'lucide-react';
 
 import { Model, ModelType } from '../data/models';
 

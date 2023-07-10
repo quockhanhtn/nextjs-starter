@@ -1,6 +1,3 @@
-import { Button } from '~/components/ui/button';
-import { ScrollArea } from '~/components/ui/scroll-area';
-import { cn } from '~/styles/utils';
 import {
   LayoutGrid,
   Library,
@@ -11,6 +8,10 @@ import {
   Radio,
   User,
 } from 'lucide-react';
+
+import { Button } from '~/components/ui/button';
+import { ScrollArea } from '~/components/ui/scroll-area';
+import { cn } from '~/styles/utils';
 
 import { Playlist } from '../data/playlists';
 

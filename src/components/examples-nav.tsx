@@ -2,9 +2,10 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ArrowRight } from 'lucide-react';
+
 import { ScrollArea, ScrollBar } from '~/components/ui/scroll-area';
 import { cn } from '~/styles/utils';
-import { ArrowRight } from 'lucide-react';
 
 const examples = [
   {

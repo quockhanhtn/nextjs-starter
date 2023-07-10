@@ -1,5 +1,6 @@
-import { cn } from '~/styles/utils';
 import { Loader2 as LoaderIcon } from 'lucide-react';
+
+import { cn } from '~/styles/utils';
 
 import { SvgIconProps } from './types';
 

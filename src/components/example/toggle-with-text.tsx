@@ -1,4 +1,5 @@
 import { FontItalicIcon } from '@radix-ui/react-icons';
+
 import { Toggle } from '~/components/ui/toggle';
 
 export default function ToggleWithText() {

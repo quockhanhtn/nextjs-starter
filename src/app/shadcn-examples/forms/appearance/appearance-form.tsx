@@ -1,6 +1,10 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { ChevronDown } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+
 import { Button, buttonVariants } from '~/components/ui/button';
 import {
   Form,
@@ -14,9 +18,6 @@ import {
 import { RadioGroup, RadioGroupItem } from '~/components/ui/radio-group';
 import { toast } from '~/components/ui/use-toast';
 import { cn } from '~/styles/utils';
-import { ChevronDown } from 'lucide-react';
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
 
 const appearanceFormSchema = z.object({
   theme: z.enum(['light', 'dark'], {

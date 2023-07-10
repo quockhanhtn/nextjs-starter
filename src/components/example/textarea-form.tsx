@@ -1,6 +1,9 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+
 import { Button } from '~/components/ui/button';
 import {
   Form,
@@ -13,8 +16,6 @@ import {
 } from '~/components/ui/form';
 import { Textarea } from '~/components/ui/textarea';
 import { toast } from '~/components/ui/use-toast';
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
 
 const FormSchema = z.object({
   bio: z

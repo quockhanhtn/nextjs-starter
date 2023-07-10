@@ -2,9 +2,10 @@
 
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
+import { CircleDot as CircleDotIcon } from 'lucide-react';
+
 import { buttonVariants } from '~/components/ui/button';
 import { cn } from '~/styles/utils';
-import { CircleDot as CircleDotIcon } from 'lucide-react';
 
 import { sidebars } from './config';
 

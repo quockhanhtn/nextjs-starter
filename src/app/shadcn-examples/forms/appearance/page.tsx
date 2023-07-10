@@ -1,5 +1,5 @@
-import { AppearanceForm } from '~/app/shadcn-examples/forms/appearance/appearance-form';
 import { Separator } from '~/components/ui/separator';
+import { AppearanceForm } from '~/app/shadcn-examples/forms/appearance/appearance-form';
 
 export default function SettingsAppearancePage() {
   return (

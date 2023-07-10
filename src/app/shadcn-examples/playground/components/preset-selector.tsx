@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { PopoverProps } from '@radix-ui/react-popover';
+import { Check, ChevronsUpDown } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import {
   Command,
@@ -13,7 +15,6 @@ import {
 } from '~/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '~/components/ui/popover';
 import { cn } from '~/styles/utils';
-import { Check, ChevronsUpDown } from 'lucide-react';
 
 import { Preset } from '../data/presets';
 
