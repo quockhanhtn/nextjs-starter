@@ -1,8 +1,11 @@
-import { LayoutGrid } from 'lucide-react';
+import { ForwardRefExoticComponent } from 'react';
+import { LayoutGrid, LucideIcon, LucideProps } from 'lucide-react';
 
 export type SidebarItemType = {
   title: string;
-  Icon?: (props: React.HTMLProps<HTMLDivElement> | any) => React.ReactElement | JSX.Element;
+  Icon?:
+    | ((props: React.HTMLProps<HTMLDivElement> | any) => React.ReactElement | JSX.Element)
+    | ForwardRefExoticComponent<LucideProps>;
   href: string;
   child?: Array<Omit<SidebarItemType, 'child'>>;
 };
