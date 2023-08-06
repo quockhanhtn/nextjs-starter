@@ -1,4 +1,5 @@
-import { Icons } from '~/components/icons';
+import { CreditCard } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import {
   Card,
@@ -18,7 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { CreditCard } from 'lucide-react';
+import { Icons } from '~/components/icons';
 
 export function DemoPaymentMethod() {
   return (
@@ -42,7 +43,7 @@ export function DemoPaymentMethod() {
             className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground [&:has([data-state=checked])]:border-primary"
           >
             <RadioGroupItem value="paypal" id="paypal" className="sr-only" />
-            <Icons.paypal className="mb-3 h-6 w-6" />
+            <Icons.Paypal className="mb-3 h-6 w-6" />
             Paypal
           </Label>
           <Label
@@ -50,7 +51,7 @@ export function DemoPaymentMethod() {
             className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground [&:has([data-state=checked])]:border-primary"
           >
             <RadioGroupItem value="apple" id="apple" className="sr-only" />
-            <Icons.apple className="mb-3 h-6 w-6" />
+            <Icons.Apple className="mb-3 h-6 w-6" />
             Apple
           </Label>
         </RadioGroup>

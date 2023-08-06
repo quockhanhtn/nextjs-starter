@@ -1,5 +1,10 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { Activity, CreditCard, DollarSign, Download, Users } from 'lucide-react';
+
+import { Button } from '~/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs';
 import { CalendarDateRangePicker } from '~/app/shadcn-examples/dashboard/components/date-range-picker';
 import { MainNav } from '~/app/shadcn-examples/dashboard/components/main-nav';
 import { Overview } from '~/app/shadcn-examples/dashboard/components/overview';
@@ -7,10 +12,6 @@ import { RecentSales } from '~/app/shadcn-examples/dashboard/components/recent-s
 import { Search } from '~/app/shadcn-examples/dashboard/components/search';
 import TeamSwitcher from '~/app/shadcn-examples/dashboard/components/team-switcher';
 import { UserNav } from '~/app/shadcn-examples/dashboard/components/user-nav';
-import { Button } from '~/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs';
-import { Activity, CreditCard, DollarSign, Download, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Dashboard',

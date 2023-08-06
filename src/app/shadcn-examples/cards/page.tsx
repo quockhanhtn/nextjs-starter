@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+
 import { cn } from '~/styles/utils';
 
 import { DemoCookieSettings } from './components/cookie-settings';

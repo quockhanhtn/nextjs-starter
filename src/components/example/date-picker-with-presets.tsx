@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { CalendarIcon } from '@radix-ui/react-icons';
+import { addDays, format } from 'date-fns';
+
 import { Button } from '~/components/ui/button';
 import { Calendar } from '~/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '~/components/ui/popover';
@@ -13,7 +15,6 @@ import {
   SelectValue,
 } from '~/components/ui/select';
 import { cn } from '~/styles/utils';
-import { addDays, format } from 'date-fns';
 
 export default function DatePickerWithPresets() {
   const [date, setDate] = useState<Date>();

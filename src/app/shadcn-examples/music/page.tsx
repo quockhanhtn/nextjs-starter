@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { PlusCircle } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import { ScrollArea, ScrollBar } from '~/components/ui/scroll-area';
 import { Separator } from '~/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs';
-import { PlusCircle } from 'lucide-react';
 
 import { AlbumArtwork } from './components/album-artwork';
 import { Menu } from './components/menu';

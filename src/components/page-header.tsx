@@ -1,5 +1,6 @@
-import { cn } from '~/styles/utils';
 import Balance from 'react-wrap-balancer';
+
+import { cn } from '~/styles/utils';
 
 function PageHeader({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (

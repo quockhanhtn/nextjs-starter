@@ -1,6 +1,5 @@
 'use client';
 
-import { Icons } from '~/components/icons';
 import { Button } from '~/components/ui/button';
 import {
   Card,
@@ -12,6 +11,7 @@ import {
 } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
+import { Icons } from '~/components/icons';
 
 export function DemoCreateAccount() {
   return (
@@ -23,11 +23,11 @@ export function DemoCreateAccount() {
       <CardContent className="grid gap-4">
         <div className="grid grid-cols-2 gap-6">
           <Button variant="outline">
-            <Icons.gitHub className="mr-2 h-4 w-4" />
+            <Icons.GitHub className="mr-2 h-4 w-4" />
             Github
           </Button>
           <Button variant="outline">
-            <Icons.google className="mr-2 h-4 w-4" />
+            <Icons.Google className="mr-2 h-4 w-4" />
             Google
           </Button>
         </div>

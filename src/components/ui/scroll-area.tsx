@@ -2,6 +2,7 @@
 
 import { forwardRef } from 'react';
 import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';
+
 import { cn } from '~/styles/utils';
 
 const ScrollArea = forwardRef<

@@ -2,6 +2,10 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { CalendarIcon } from '@radix-ui/react-icons';
+import { format } from 'date-fns';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+
 import { Button } from '~/components/ui/button';
 import { Calendar } from '~/components/ui/calendar';
 import {
@@ -16,9 +20,6 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from '~/components/ui/popover';
 import { toast } from '~/components/ui/use-toast';
 import { cn } from '~/styles/utils';
-import { format } from 'date-fns';
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
 
 const FormSchema = z.object({
   dob: z.date({

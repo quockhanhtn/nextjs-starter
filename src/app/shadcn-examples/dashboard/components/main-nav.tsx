@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { cn } from '~/styles/utils';
 
 export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElement>) {

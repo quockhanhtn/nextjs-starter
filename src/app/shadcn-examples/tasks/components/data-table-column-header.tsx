@@ -1,4 +1,6 @@
 import { Column } from '@tanstack/react-table';
+import { ChevronsUpDown, EyeOff, SortAsc, SortDesc } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import {
   DropdownMenu,
@@ -8,7 +10,6 @@ import {
   DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu';
 import { cn } from '~/styles/utils';
-import { ChevronsUpDown, EyeOff, SortAsc, SortDesc } from 'lucide-react';
 
 interface DataTableColumnHeaderProps<TData, TValue> extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>;

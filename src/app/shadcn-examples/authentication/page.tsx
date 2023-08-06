@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { UserAuthForm } from '~/app/shadcn-examples/authentication/components/user-auth-form';
+import { Command } from 'lucide-react';
+
 import { buttonVariants } from '~/components/ui/button';
 import { cn } from '~/styles/utils';
-import { Command } from 'lucide-react';
+import { UserAuthForm } from '~/app/shadcn-examples/authentication/components/user-auth-form';
 
 export const metadata: Metadata = {
   title: 'Authentication',

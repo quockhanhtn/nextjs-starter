@@ -1,15 +1,16 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { History } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '~/components/ui/hover-card';
 import { Label } from '~/components/ui/label';
 import { Separator } from '~/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs';
 import { Textarea } from '~/components/ui/textarea';
-import { History } from 'lucide-react';
+import { Icons } from '~/components/icons';
 
 import { CodeViewer } from './components/code-viewer';
-import { Icons } from './components/icons';
 import { MaxLengthSelector } from './components/maxlength-selector';
 import { ModelSelector } from './components/model-selector';
 import { PresetActions } from './components/preset-actions';
@@ -81,15 +82,15 @@ export default function PlaygroundPage() {
                   <TabsList className="grid grid-cols-3">
                     <TabsTrigger value="complete">
                       <span className="sr-only">Complete</span>
-                      <Icons.completeMode className="h-5 w-5" />
+                      <Icons.CompleteMode className="h-5 w-5" />
                     </TabsTrigger>
                     <TabsTrigger value="insert">
                       <span className="sr-only">Insert</span>
-                      <Icons.insertMode className="h-5 w-5" />
+                      <Icons.InsertMode className="h-5 w-5" />
                     </TabsTrigger>
                     <TabsTrigger value="edit">
                       <span className="sr-only">Edit</span>
-                      <Icons.editMode className="h-5 w-5" />
+                      <Icons.EditMode className="h-5 w-5" />
                     </TabsTrigger>
                   </TabsList>
                 </div>

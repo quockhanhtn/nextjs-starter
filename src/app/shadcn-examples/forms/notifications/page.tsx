@@ -1,6 +1,5 @@
-import { AccountForm } from '~/app/shadcn-examples/forms/account/account-form';
-import { NotificationsForm } from '~/app/shadcn-examples/forms/notifications/notifications-form';
 import { Separator } from '~/components/ui/separator';
+import { NotificationsForm } from '~/app/shadcn-examples/forms/notifications/notifications-form';
 
 export default function SettingsNotificationsPage() {
   return (

@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts', 'tsx'],
   images: {
-    domains: ['images.unsplash.com'],
+    domains: ['images.unsplash.com', 'img.freepik.com'],
   },
   output: 'standalone',
 };

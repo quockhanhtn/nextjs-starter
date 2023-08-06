@@ -1,6 +1,8 @@
 'use client';
 
 import { Row } from '@tanstack/react-table';
+import { Copy, MoreHorizontal, Pen, Star, Tags, Trash } from 'lucide-react';
+
 import { Button } from '~/components/ui/button';
 import {
   DropdownMenu,
@@ -15,7 +17,6 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu';
-import { Copy, MoreHorizontal, Pen, Star, Tags, Trash } from 'lucide-react';
 
 import { labels } from '../data/data';
 import { taskSchema } from '../data/schema';
