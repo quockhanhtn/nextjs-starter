@@ -1,5 +1,5 @@
 import { ForwardRefExoticComponent } from 'react';
-import { LayoutGrid, LucideIcon, LucideProps } from 'lucide-react';
+import { LayoutGrid, LucideProps } from 'lucide-react';
 
 export type SidebarItemType = {
   title: string;

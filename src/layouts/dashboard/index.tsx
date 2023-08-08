@@ -1,7 +1,8 @@
 'use client';
 
-import { useMediaQuery } from '~/hooks';
 import DashboardSidebar from '~/layouts/dashboard/DashboardSidebar';
+
+import { useMediaQuery } from '~/hooks';
 
 const DashboardLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const isMobile = useMediaQuery('(max-width: 768px)');

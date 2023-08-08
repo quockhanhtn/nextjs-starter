@@ -12,7 +12,6 @@ module.exports = {
     'eslint:recommended',
     'next/core-web-vitals',
     'plugin:prettier/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:react/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -26,7 +25,7 @@ module.exports = {
     project: './tsconfig.json',
     warnOnUnsupportedTypeScriptVersion: false,
   },
-  plugins: ['prettier', 'react-hooks', 'react'],
+  plugins: ['prettier', 'react'],
   rules: {
     // @typescript-eslint
     'no-unused-vars': 'off', // off base rule, use @typescript-eslint/no-unused-vars instead
@@ -47,8 +46,10 @@ module.exports = {
     'no-alert': 'off',
     'no-console': 'off',
     'no-empty': 'warn',
+    'no-param-reassign': 'off',
     'no-plusplus': 'off',
     'no-restricted-exports': 'off',
+    'no-underscore-dangle': 'off',
 
     // import
     'import/prefer-default-export': 0,

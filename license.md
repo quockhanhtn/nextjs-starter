@@ -1,5 +1,3 @@
-LICENSE
-
 **Copyright (c) 2023 Khanh Lam**
 
 This repository and its contents are the intellectual property of Khanh Lam. By accessing or using the code and files within this repository, you agree to the terms and conditions of this license.
@@ -24,4 +22,4 @@ By using the code from this repository, you acknowledge that you have read, unde
 
 If you do not agree to these terms, you are not allowed to access or use the code for any purpose.
 
-*This license is subject to change or update at any time without prior notice.*
+_This license is subject to change or update at any time without prior notice._

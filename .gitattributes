@@ -28,27 +28,27 @@
 *.js              text eol=lf
 *.json            text eol=lf
 *.jsx             text eol=lf
-*.less            text eol=lf
-*.ls              text eol=lf
-*.map             text eol=lf -diff
-*.od              text eol=lf
-*.onlydata        text eol=lf
-*.php             text eol=lf diff=php
-*.pl              text eol=lf
+*.less            text
+*.ls              text
+*.map             text -diff
+*.od              text
+*.onlydata        text
+*.php             text diff=php
+*.pl              text
 *.ps1             text eol=crlf
-*.py              text eol=lf diff=python
-*.rb              text eol=lf diff=ruby
-*.sass            text eol=lf
-*.scm             text eol=lf
+*.py              text diff=python
+*.rb              text diff=ruby
+*.sass            text
+*.scm             text
 *.scss            text diff=css
 *.sh              text eol=lf
 .husky/*          text eol=lf
-*.sql             text eol=lf
-*.styl            text eol=lf
-*.tag             text eol=lf
+*.sql             text
+*.styl            text
+*.tag             text
 *.ts              text eol=lf
 *.tsx             text eol=lf
-*.xml             text eol=lf
+*.xml             text
 *.xhtml           text diff=html
 
 # Docker
@@ -56,73 +56,91 @@ Dockerfile        text
 
 # Documentation
 *.ipynb           text eol=lf
-*.markdown        text eol=lf diff=markdown
-*.md              text eol=lf diff=markdown
-*.mdwn            text eol=lf diff=markdown
-*.mdown           text eol=lf diff=markdown
-*.mkd             text eol=lf diff=markdown
-*.mkdn            text eol=lf diff=markdown
-*.mdtxt           text eol=lf
-*.mdtext          text eol=lf
-*.txt             text eol=lf
-AUTHORS           text eol=lf
-CHANGELOG         text eol=lf
-CHANGES           text eol=lf
-CONTRIBUTING      text eol=lf
-COPYING           text eol=lf
-copyright         text eol=lf
-*COPYRIGHT*       text eol=lf
-INSTALL           text eol=lf
-license           text eol=lf
-LICENSE           text eol=lf
-NEWS              text eol=lf
-readme            text eol=lf
-*README*          text eol=lf
-TODO              text eol=lf
+*.markdown        text diff=markdown
+*.md              text diff=markdown
+*.mdwn            text diff=markdown
+*.mdown           text diff=markdown
+*.mkd             text diff=markdown
+*.mkdn            text diff=markdown
+*.mdtxt           text
+*.mdtext          text
+*.txt             text
+AUTHORS           text
+CHANGELOG         text
+CHANGES           text
+CONTRIBUTING      text
+COPYING           text
+copyright         text
+*COPYRIGHT*       text
+INSTALL           text
+license           text
+LICENSE           text
+NEWS              text
+readme            text
+*README*          text
+TODO              text
 
 # Templates
-*.dot             text eol=lf
-*.ejs             text eol=lf
-*.erb             text eol=lf
-*.haml            text eol=lf
-*.handlebars      text eol=lf
-*.hbs             text eol=lf
-*.hbt             text eol=lf
-*.jade            text eol=lf
-*.latte           text eol=lf
-*.mustache        text eol=lf
-*.njk             text eol=lf
-*.phtml           text eol=lf
-*.svelte          text eol=lf
-*.tmpl            text eol=lf
-*.tpl             text eol=lf
-*.twig            text eol=lf
-*.vue             text eol=lf
+*.dot             text
+*.ejs             text
+*.erb             text
+*.haml            text
+*.handlebars      text
+*.hbs             text
+*.hbt             text
+*.jade            text
+*.latte           text
+*.mustache        text
+*.njk             text
+*.phtml           text
+*.svelte          text
+*.tmpl            text
+*.tpl             text
+*.twig            text
+*.vue             text
 
 # Configs
-*.cnf             text eol=lf -diff
-*.conf            text eol=lf -diff
-*.config          text eol=lf -diff
-.editorconfig     text eol=lf -diff
-.env              text eol=lf -diff
-.gitattributes    text eol=lf -diff
-.gitconfig        text eol=lf -diff
-.htaccess         text eol=lf -diff
-*.lock            text eol=lf -diff
-package.json      text eol=lf
+.editorconfig     text
+.env              text
+.eslintignore     text
+.eslintrc.cjs     text
+.eslintrc.js      text
+.eslintrc.json    text
+.eslintrc.yaml    text
+.eslintrc.yml     text
+.gitattributes    text
+.gitconfig        text
+.htaccess         text
+.prettierignore   text eol=lf
+.prettierrc       text eol=lf
+.prettierrc.cjs   text eol=lf
+.prettierrc.js    text eol=lf
+.prettierrc.json  text eol=lf
+.prettierrc.json5 text eol=lf
+.prettierrc.mjs   text eol=lf
+.prettierrc.toml  text eol=lf
+.prettierrc.yaml  text eol=lf
+.prettierrc.yml   text eol=lf
+*.cnf             text
+*.conf            text
+*.config          text
+*.lock            text -diff
+*.toml            text
+*.yaml            text
+*.yml             text
+browserslist      text
+Makefile          text
+makefile          text
 package-lock.json text eol=lf -diff
+package.json      text eol=lf
 pnpm-lock.yaml    text eol=lf -diff
-.prettierrc       text eol=lf -diff
-yarn.lock         text eol=lf -diff
-*.toml            text eol=lf -diff
-*.yaml            text eol=lf -diff
-*.yml             text eol=lf -diff
-browserslist      text eol=lf -diff
-Makefile          text eol=lf -diff
-makefile          text eol=lf -diff
+prettier.config.cjs       text eol=lf
+prettier.config.js       text eol=lf
+prettier.config.mjs       text eol=lf
+yarn.lock         text -diff
 
 # Heroku
-Procfile          text eol=lf
+Procfile          text
 
 # Graphics
 *.ai              binary
@@ -201,10 +219,10 @@ Procfile          text eol=lf
 *.pyc             binary
 
 # RC files (like .babelrc or .eslintrc)
-*.*rc             text eol=lf
+*.*rc             text
 
 # Ignore files (like .npmignore or .gitignore)
-*.*ignore         text eol=lf
+*.*ignore         text
 
 #
 # Exclude files from exporting

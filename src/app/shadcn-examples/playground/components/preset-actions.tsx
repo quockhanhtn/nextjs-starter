@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Dialog } from '@radix-ui/react-dialog';
 import { Flag, MoreHorizontal, Trash } from 'lucide-react';
+import { Dialog } from '@radix-ui/react-dialog';
 
 import {
   AlertDialog,
