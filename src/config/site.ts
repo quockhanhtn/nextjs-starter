@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: 'shadcn/ui',
+  name: 'NextJs Starter template',
   description: 'Beautifully designed components built with Radix UI and Tailwind CSS.',
   keywords: ['Next.js', 'React', 'Tailwind CSS', 'Server Components', 'Radix UI'],
   authors: [
@@ -14,8 +14,8 @@ export const siteConfig = {
   ogImage: '/og.jpg',
 
   links: {
-    twitter: 'https://twitter.com/shadcn',
-    github: 'https://github.com/shadcn/ui',
+    twitter: 'https://twitter.com/quockhanhtn',
+    github: 'https://github.com/quockhanhtn',
   },
   favicons: [
     // android-chrome
