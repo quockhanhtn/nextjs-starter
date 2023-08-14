@@ -1,7 +1,6 @@
+import { SiteFooter } from '@/components/site-footer';
+import { SiteHeader } from '@/components/site-header';
 import { ThemeProvider } from '@/components/themes/theme-provider';
-
-import { SiteFooter } from './components/site-footer';
-import { SiteHeader } from './components/site-header';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import { DialogProps } from '@radix-ui/react-alert-dialog';
@@ -21,10 +21,10 @@ import {
 
 export function CommandMenu({ ...props }: DialogProps) {
   const router = useRouter();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const { setTheme } = useTheme();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
@@ -36,7 +36,7 @@ export function CommandMenu({ ...props }: DialogProps) {
     return () => document.removeEventListener('keydown', down);
   }, []);
 
-  const runCommand = React.useCallback((command: () => unknown) => {
+  const runCommand = useCallback((command: () => unknown) => {
     setOpen(false);
     command();
   }, []);
