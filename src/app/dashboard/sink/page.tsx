@@ -70,7 +70,7 @@ export default function ExamplePage() {
                 <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-foreground">
                   CSS variables
                 </code>
-                .{' '}
+                . {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <Link href="#" className="font-medium text-primary underline underline-offset-4">
                   Click here
                 </Link>{' '}
