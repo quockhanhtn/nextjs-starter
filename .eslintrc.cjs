@@ -88,7 +88,7 @@ module.exports = {
     'react/jsx-pascal-case': ['warn', { ignore: ['Icons.*'] }],
 
     // jsx-a11y
-    'jsx-a11y/label-has-associated-control': 'warn',
+    'jsx-a11y/label-has-associated-control': 'off',
     'jsx-a11y/anchor-is-valid': 'warn',
   },
 };
