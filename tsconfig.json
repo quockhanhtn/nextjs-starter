@@ -23,7 +23,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "sourceMap": false,
+    "sourceMap": true,
     "removeComments": true,
     "newLine": "lf"
   },

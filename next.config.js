@@ -8,6 +8,7 @@ const nextConfig = {
   },
   output: 'standalone',
   distDir: '.next',
+  productionBrowserSourceMaps: true,
   cleanDistDir: true,
   trailingSlash: true,
   eslint: {
